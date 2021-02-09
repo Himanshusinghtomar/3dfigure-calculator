@@ -135,21 +135,29 @@ def cone():
         print(" Wrong Input ")
 
 
+run = True
+while run == True:
+        print(" 3d Figure Calculator ")
+        w = int(input(" Select the 3D \n 1:Cuboid \n 2:Cube \n 3:Cylinder \n 4:Sphere \n 5:Hemisphere \n 6:Cone \n :- "))
+        if w == 1:
+            cuboid()
+        elif w == 2:
+            cube()
+        elif w == 3:
+            cylinder()
+        elif w == 4:
+            sphere()
+        elif w == 5:
+            hemisphere()
+        elif w == 6:
+            cone()
 
-print(" 3d Figure Calculator ")
-w = int(input(" Select the 3D \n 1:Cuboid \n 2:Cube \n 3:Cylinder \n 4: Sphere \n 5:Hemisphere \n 6:Cone \n :- "))
-if w == 1:
-    cuboid()
-elif w == 2:
-    cube()
-elif w == 3:
-    cylinder()
-elif w == 4:
-    sphere()
-elif w == 5:
-    hemisphere()
-elif w == 6:
-    cone()
-
-else:
-    print(" Wrong input ")
+        else:
+            print(" Wrong input ")
+        i = input("Enter Y for continue and N for stop :- ").upper()
+        if i == "Y":
+            run = True
+        elif i == "N":
+            run = False
+        else:
+            print("worng input ")
